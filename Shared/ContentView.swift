@@ -66,6 +66,7 @@ struct ContentView: View {
                     self.selector = 0
                     self.calculate()
                     
+                    // This forces a SwiftUI update
                     self.plotData.objectWillChange.send()
                     
                     
@@ -80,6 +81,7 @@ struct ContentView: View {
             HStack{
                 Button("x", action: {
                     
+                    // This forces SwiftUI to update
                     self.plotData.objectWillChange.send()
                     
                     self.selector = 1
