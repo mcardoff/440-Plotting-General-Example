@@ -66,7 +66,7 @@ struct ContentView: View {
                     self.selector = 0
                     self.calculate()
                     
-                    // This forces a SwiftUI update
+                    // This forces a SwiftUI update. Force a SwiftUI update.
                     self.plotData.objectWillChange.send()
                     
                     
