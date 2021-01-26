@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,42 @@
 		D2384D9525BFC5D30082D98A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384D6A25BFC5D20082D98A /* ContentView.swift */; };
 		D2384D9625BFC5D30082D98A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2384D6B25BFC5D30082D98A /* Assets.xcassets */; };
 		D2384D9725BFC5D30082D98A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2384D6B25BFC5D30082D98A /* Assets.xcassets */; };
+		D2384DB425BFC5E60082D98A /* ChangingPlotParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAA25BFC5E60082D98A /* ChangingPlotParameters.swift */; };
+		D2384DB525BFC5E60082D98A /* ChangingPlotParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAA25BFC5E60082D98A /* ChangingPlotParameters.swift */; };
+		D2384DB625BFC5E60082D98A /* ChangingPlotParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAA25BFC5E60082D98A /* ChangingPlotParameters.swift */; };
+		D2384DB725BFC5E60082D98A /* ChangingPlotParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAA25BFC5E60082D98A /* ChangingPlotParameters.swift */; };
+		D2384DB825BFC5E60082D98A /* CorePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAB25BFC5E60082D98A /* CorePlot.swift */; };
+		D2384DB925BFC5E60082D98A /* CorePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAB25BFC5E60082D98A /* CorePlot.swift */; };
+		D2384DBA25BFC5E60082D98A /* CorePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAB25BFC5E60082D98A /* CorePlot.swift */; };
+		D2384DBB25BFC5E60082D98A /* CorePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAB25BFC5E60082D98A /* CorePlot.swift */; };
+		D2384DC025BFC5E60082D98A /* PlotDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAD25BFC5E60082D98A /* PlotDataClass.swift */; };
+		D2384DC125BFC5E60082D98A /* PlotDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAD25BFC5E60082D98A /* PlotDataClass.swift */; };
+		D2384DC225BFC5E60082D98A /* PlotDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAD25BFC5E60082D98A /* PlotDataClass.swift */; };
+		D2384DC325BFC5E60082D98A /* PlotDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAD25BFC5E60082D98A /* PlotDataClass.swift */; };
+		D2384DC425BFC5E60082D98A /* TextExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAE25BFC5E60082D98A /* TextExportDocument.swift */; };
+		D2384DC525BFC5E60082D98A /* TextExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAE25BFC5E60082D98A /* TextExportDocument.swift */; };
+		D2384DC625BFC5E60082D98A /* TextExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAE25BFC5E60082D98A /* TextExportDocument.swift */; };
+		D2384DC725BFC5E60082D98A /* TextExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAE25BFC5E60082D98A /* TextExportDocument.swift */; };
+		D2384DC825BFC5E60082D98A /* operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAF25BFC5E60082D98A /* operators.swift */; };
+		D2384DC925BFC5E60082D98A /* operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAF25BFC5E60082D98A /* operators.swift */; };
+		D2384DCA25BFC5E60082D98A /* operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAF25BFC5E60082D98A /* operators.swift */; };
+		D2384DCB25BFC5E60082D98A /* operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAF25BFC5E60082D98A /* operators.swift */; };
+		D2384DCC25BFC5E60082D98A /* CalculatePlotData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DB025BFC5E60082D98A /* CalculatePlotData.swift */; };
+		D2384DCD25BFC5E60082D98A /* CalculatePlotData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DB025BFC5E60082D98A /* CalculatePlotData.swift */; };
+		D2384DCE25BFC5E60082D98A /* CalculatePlotData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DB025BFC5E60082D98A /* CalculatePlotData.swift */; };
+		D2384DCF25BFC5E60082D98A /* CalculatePlotData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DB025BFC5E60082D98A /* CalculatePlotData.swift */; };
+		D2384DD025BFC5E60082D98A /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DB125BFC5E60082D98A /* TextView.swift */; };
+		D2384DD125BFC5E60082D98A /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DB125BFC5E60082D98A /* TextView.swift */; };
+		D2384DD225BFC5E60082D98A /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DB125BFC5E60082D98A /* TextView.swift */; };
+		D2384DD325BFC5E60082D98A /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DB125BFC5E60082D98A /* TextView.swift */; };
+		D2384DEE25BFC6CB0082D98A /* CorePlot in Frameworks */ = {isa = PBXBuildFile; productRef = D2384DED25BFC6CB0082D98A /* CorePlot */; };
+		D2384DF525BFC6E20082D98A /* CorePlot in Frameworks */ = {isa = PBXBuildFile; productRef = D2384DF425BFC6E20082D98A /* CorePlot */; };
+		D2384DF725BFC6EC0082D98A /* CorePlot in Frameworks */ = {isa = PBXBuildFile; productRef = D2384DF625BFC6EC0082D98A /* CorePlot */; };
+		D2384DF925BFC6F10082D98A /* CorePlot in Frameworks */ = {isa = PBXBuildFile; productRef = D2384DF825BFC6F10082D98A /* CorePlot */; };
+		D2384DFF25BFE4390082D98A /* PlotClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DFE25BFE4390082D98A /* PlotClass.swift */; };
+		D2384E0025BFE4390082D98A /* PlotClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DFE25BFE4390082D98A /* PlotClass.swift */; };
+		D2384E0125BFE4390082D98A /* PlotClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DFE25BFE4390082D98A /* PlotClass.swift */; };
+		D2384E0225BFE4390082D98A /* PlotClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DFE25BFE4390082D98A /* PlotClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +85,14 @@
 		D2384D8B25BFC5D30082D98A /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2384D8F25BFC5D30082D98A /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		D2384D9125BFC5D30082D98A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2384DAA25BFC5E60082D98A /* ChangingPlotParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangingPlotParameters.swift; sourceTree = "<group>"; };
+		D2384DAB25BFC5E60082D98A /* CorePlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorePlot.swift; sourceTree = "<group>"; };
+		D2384DAD25BFC5E60082D98A /* PlotDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotDataClass.swift; sourceTree = "<group>"; };
+		D2384DAE25BFC5E60082D98A /* TextExportDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExportDocument.swift; sourceTree = "<group>"; };
+		D2384DAF25BFC5E60082D98A /* operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = operators.swift; sourceTree = "<group>"; };
+		D2384DB025BFC5E60082D98A /* CalculatePlotData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatePlotData.swift; sourceTree = "<group>"; };
+		D2384DB125BFC5E60082D98A /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		D2384DFE25BFE4390082D98A /* PlotClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2384DF525BFC6E20082D98A /* CorePlot in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2384DEE25BFC6CB0082D98A /* CorePlot in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2384DF725BFC6EC0082D98A /* CorePlot in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2384DF925BFC6F10082D98A /* CorePlot in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +140,7 @@
 				D2384D8325BFC5D30082D98A /* Tests iOS */,
 				D2384D8E25BFC5D30082D98A /* Tests macOS */,
 				D2384D7125BFC5D30082D98A /* Products */,
+				D2384DF325BFC6E20082D98A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,7 +149,15 @@
 			children = (
 				D2384D6925BFC5D20082D98A /* Test_PlotApp.swift */,
 				D2384D6A25BFC5D20082D98A /* ContentView.swift */,
+				D2384DFE25BFE4390082D98A /* PlotClass.swift */,
 				D2384D6B25BFC5D30082D98A /* Assets.xcassets */,
+				D2384DAA25BFC5E60082D98A /* ChangingPlotParameters.swift */,
+				D2384DAB25BFC5E60082D98A /* CorePlot.swift */,
+				D2384DAD25BFC5E60082D98A /* PlotDataClass.swift */,
+				D2384DAE25BFC5E60082D98A /* TextExportDocument.swift */,
+				D2384DAF25BFC5E60082D98A /* operators.swift */,
+				D2384DB025BFC5E60082D98A /* CalculatePlotData.swift */,
+				D2384DB125BFC5E60082D98A /* TextView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -151,6 +208,13 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		D2384DF325BFC6E20082D98A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,6 +231,9 @@
 			dependencies = (
 			);
 			name = "Test Plot (iOS)";
+			packageProductDependencies = (
+				D2384DF425BFC6E20082D98A /* CorePlot */,
+			);
 			productName = "Test Plot (iOS)";
 			productReference = D2384D7025BFC5D30082D98A /* Test Plot.app */;
 			productType = "com.apple.product-type.application";
@@ -184,6 +251,9 @@
 			dependencies = (
 			);
 			name = "Test Plot (macOS)";
+			packageProductDependencies = (
+				D2384DED25BFC6CB0082D98A /* CorePlot */,
+			);
 			productName = "Test Plot (macOS)";
 			productReference = D2384D7825BFC5D30082D98A /* Test Plot.app */;
 			productType = "com.apple.product-type.application";
@@ -202,6 +272,9 @@
 				D2384D8225BFC5D30082D98A /* PBXTargetDependency */,
 			);
 			name = "Tests iOS";
+			packageProductDependencies = (
+				D2384DF625BFC6EC0082D98A /* CorePlot */,
+			);
 			productName = "Tests iOS";
 			productReference = D2384D8025BFC5D30082D98A /* Tests iOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -220,6 +293,9 @@
 				D2384D8D25BFC5D30082D98A /* PBXTargetDependency */,
 			);
 			name = "Tests macOS";
+			packageProductDependencies = (
+				D2384DF825BFC6F10082D98A /* CorePlot */,
+			);
 			productName = "Tests macOS";
 			productReference = D2384D8B25BFC5D30082D98A /* Tests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -258,6 +334,9 @@
 				Base,
 			);
 			mainGroup = D2384D6325BFC5D20082D98A;
+			packageReferences = (
+				D2384DEC25BFC6CB0082D98A /* XCRemoteSwiftPackageReference "core-plot" */,
+			);
 			productRefGroup = D2384D7125BFC5D30082D98A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -309,7 +388,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2384D9425BFC5D30082D98A /* ContentView.swift in Sources */,
+				D2384DCC25BFC5E60082D98A /* CalculatePlotData.swift in Sources */,
+				D2384DC825BFC5E60082D98A /* operators.swift in Sources */,
+				D2384DC425BFC5E60082D98A /* TextExportDocument.swift in Sources */,
+				D2384DC025BFC5E60082D98A /* PlotDataClass.swift in Sources */,
+				D2384DB825BFC5E60082D98A /* CorePlot.swift in Sources */,
 				D2384D9225BFC5D30082D98A /* Test_PlotApp.swift in Sources */,
+				D2384DB425BFC5E60082D98A /* ChangingPlotParameters.swift in Sources */,
+				D2384DD025BFC5E60082D98A /* TextView.swift in Sources */,
+				D2384DFF25BFE4390082D98A /* PlotClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +405,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2384D9525BFC5D30082D98A /* ContentView.swift in Sources */,
+				D2384DCD25BFC5E60082D98A /* CalculatePlotData.swift in Sources */,
+				D2384DC925BFC5E60082D98A /* operators.swift in Sources */,
+				D2384DC525BFC5E60082D98A /* TextExportDocument.swift in Sources */,
+				D2384DC125BFC5E60082D98A /* PlotDataClass.swift in Sources */,
+				D2384DB925BFC5E60082D98A /* CorePlot.swift in Sources */,
 				D2384D9325BFC5D30082D98A /* Test_PlotApp.swift in Sources */,
+				D2384DB525BFC5E60082D98A /* ChangingPlotParameters.swift in Sources */,
+				D2384DD125BFC5E60082D98A /* TextView.swift in Sources */,
+				D2384E0025BFE4390082D98A /* PlotClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +421,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2384DBA25BFC5E60082D98A /* CorePlot.swift in Sources */,
+				D2384DCE25BFC5E60082D98A /* CalculatePlotData.swift in Sources */,
+				D2384DCA25BFC5E60082D98A /* operators.swift in Sources */,
 				D2384D8525BFC5D30082D98A /* Tests_iOS.swift in Sources */,
+				D2384DC225BFC5E60082D98A /* PlotDataClass.swift in Sources */,
+				D2384DC625BFC5E60082D98A /* TextExportDocument.swift in Sources */,
+				D2384DD225BFC5E60082D98A /* TextView.swift in Sources */,
+				D2384DB625BFC5E60082D98A /* ChangingPlotParameters.swift in Sources */,
+				D2384E0125BFE4390082D98A /* PlotClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +437,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2384DBB25BFC5E60082D98A /* CorePlot.swift in Sources */,
+				D2384DCF25BFC5E60082D98A /* CalculatePlotData.swift in Sources */,
+				D2384DCB25BFC5E60082D98A /* operators.swift in Sources */,
 				D2384D9025BFC5D30082D98A /* Tests_macOS.swift in Sources */,
+				D2384DC325BFC5E60082D98A /* PlotDataClass.swift in Sources */,
+				D2384DC725BFC5E60082D98A /* TextExportDocument.swift in Sources */,
+				D2384DD325BFC5E60082D98A /* TextView.swift in Sources */,
+				D2384DB725BFC5E60082D98A /* ChangingPlotParameters.swift in Sources */,
+				D2384E0225BFE4390082D98A /* PlotClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,6 +807,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D2384DEC25BFC6CB0082D98A /* XCRemoteSwiftPackageReference "core-plot" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/core-plot/core-plot";
+			requirement = {
+				branch = "release-2.4";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D2384DED25BFC6CB0082D98A /* CorePlot */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2384DEC25BFC6CB0082D98A /* XCRemoteSwiftPackageReference "core-plot" */;
+			productName = CorePlot;
+		};
+		D2384DF425BFC6E20082D98A /* CorePlot */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2384DEC25BFC6CB0082D98A /* XCRemoteSwiftPackageReference "core-plot" */;
+			productName = CorePlot;
+		};
+		D2384DF625BFC6EC0082D98A /* CorePlot */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2384DEC25BFC6CB0082D98A /* XCRemoteSwiftPackageReference "core-plot" */;
+			productName = CorePlot;
+		};
+		D2384DF825BFC6F10082D98A /* CorePlot */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2384DEC25BFC6CB0082D98A /* XCRemoteSwiftPackageReference "core-plot" */;
+			productName = CorePlot;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D2384D6425BFC5D20082D98A /* Project object */;
 }
