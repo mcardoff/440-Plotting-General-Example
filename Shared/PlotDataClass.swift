@@ -12,13 +12,13 @@ import CorePlot
 
 class PlotDataClass: NSObject, ObservableObject {
     
-    @Published var plotData = [plotDataType]()
-    @Published var changingPlotParameters: ChangingPlotParameters = ChangingPlotParameters()
-    @Published var calculatedText = ""
+    @MainActor @Published var plotData = [plotDataType]()
+    @MainActor @Published var changingPlotParameters: ChangingPlotParameters = ChangingPlotParameters()
+    @MainActor @Published var calculatedText = ""
     //In case you want to plot vs point number
-    @Published var pointNumber = 1.0
+    @MainActor @Published var pointNumber = 1.0
     
-    init(fromLine line: Bool) {
+    @MainActor init(fromLine line: Bool) {
         
         
         //Must call super init before initializing plot
@@ -32,9 +32,9 @@ class PlotDataClass: NSObject, ObservableObject {
     
     
     
-    func plotBlank()
+    @MainActor func plotBlank()
     {
-        plotData = []
+        zeroData()
         
         //set the Plot Parameters
         changingPlotParameters.yMax = 4.0
@@ -44,18 +44,18 @@ class PlotDataClass: NSObject, ObservableObject {
         changingPlotParameters.xLabel = "x"
         changingPlotParameters.yLabel = "y"
         changingPlotParameters.lineColor = .red()
-        changingPlotParameters.title = " y = x"
+        changingPlotParameters.title = "y = x"
         
     }
     
-    func zeroData(){
+    @MainActor func zeroData(){
             
             plotData = []
             pointNumber = 1.0
             
         }
         
-        func appendData(dataPoint: [plotDataType])
+    @MainActor func appendData(dataPoint: [plotDataType])
         {
           
             plotData.append(contentsOf: dataPoint)

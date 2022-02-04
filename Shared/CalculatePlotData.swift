@@ -12,27 +12,49 @@ import CorePlot
 class CalculatePlotData: ObservableObject {
     
     var plotDataModel: PlotDataClass? = nil
+    var theText = ""
     
 
-    func plotYEqualsX()
-    {
-        
+    @MainActor func setThePlotParameters(color: String, xLabel: String, yLabel: String, title: String) {
         //set the Plot Parameters
         plotDataModel!.changingPlotParameters.yMax = 10.0
         plotDataModel!.changingPlotParameters.yMin = -5.0
         plotDataModel!.changingPlotParameters.xMax = 10.0
         plotDataModel!.changingPlotParameters.xMin = -5.0
-        plotDataModel!.changingPlotParameters.xLabel = "x"
-        plotDataModel!.changingPlotParameters.yLabel = "y"
-        plotDataModel!.changingPlotParameters.lineColor = .red()
-        plotDataModel!.changingPlotParameters.title = " y = x"
+        plotDataModel!.changingPlotParameters.xLabel = xLabel
+        plotDataModel!.changingPlotParameters.yLabel = yLabel
+        
+        if color == "Red"{
+            plotDataModel!.changingPlotParameters.lineColor = .red()
+        }
+        else{
+            
+            plotDataModel!.changingPlotParameters.lineColor = .blue()
+        }
+        plotDataModel!.changingPlotParameters.title = title
         
         plotDataModel!.zeroData()
+    }
+    
+    @MainActor func appendDataToPlot(plotData: [plotDataType]) {
+        plotDataModel!.appendData(dataPoint: plotData)
+    }
+    
+    func plotYEqualsX() async
+    {
+        
+        theText = "y = x\n"
+        
+        await setThePlotParameters(color: "Red", xLabel: "x", yLabel: "y", title: "y = x")
+        
+        await resetCalculatedTextOnMainThread()
+        
+        
         var plotData :[plotDataType] =  []
         
         
         for i in 0 ..< 120 {
-
+             
             //create x values here
 
             let x = -2.0 + Double(i) * 0.2
@@ -44,31 +66,28 @@ class CalculatePlotData: ObservableObject {
 
             let dataPoint: plotDataType = [.X: x, .Y: y]
             plotData.append(contentsOf: [dataPoint])
-            
-            plotDataModel!.calculatedText += "\(x)\t\(y)\n"
+            theText += "x = \(x), y = \(y)\n"
         
         }
         
-        plotDataModel!.appendData(dataPoint: plotData)
+        await appendDataToPlot(plotData: plotData)
+        await updateCalculatedTextOnMainThread(theText: theText)
         
         
     }
     
     
-    func ploteToTheMinusX()
+    func ploteToTheMinusX() async
     {
         
         //set the Plot Parameters
-        plotDataModel!.changingPlotParameters.yMax = 10
-        plotDataModel!.changingPlotParameters.yMin = -3.0
-        plotDataModel!.changingPlotParameters.xMax = 10.0
-        plotDataModel!.changingPlotParameters.xMin = -3.0
-        plotDataModel!.changingPlotParameters.xLabel = "x"
-        plotDataModel!.changingPlotParameters.yLabel = "y = exp(-x)"
-        plotDataModel!.changingPlotParameters.lineColor = .blue()
-        plotDataModel!.changingPlotParameters.title = "exp(-x)"
-
-        plotDataModel!.zeroData()
+        
+        await setThePlotParameters(color: "Blue", xLabel: "x", yLabel: "y = exp(-x)", title: "y = exp(-x)")
+        
+        await resetCalculatedTextOnMainThread()
+        
+        theText = "y = exp(-x)\n"
+        
         var plotData :[plotDataType] =  []
         for i in 0 ..< 60 {
 
@@ -82,15 +101,27 @@ class CalculatePlotData: ObservableObject {
             
             let dataPoint: plotDataType = [.X: x, .Y: y]
             plotData.append(contentsOf: [dataPoint])
-            
-            plotDataModel!.calculatedText += "\(x)\t\(y)\n"
-            
+            theText += "x = \(x), y = \(y)\n"
         }
         
-        plotDataModel!.appendData(dataPoint: plotData)
+        await appendDataToPlot(plotData: plotData)
+        await updateCalculatedTextOnMainThread(theText: theText)
         
         return
     }
+    
+    
+        @MainActor func resetCalculatedTextOnMainThread() {
+            //Print Header
+            plotDataModel!.calculatedText = ""
+    
+        }
+    
+    
+        @MainActor func updateCalculatedTextOnMainThread(theText: String) {
+            //Print Header
+            plotDataModel!.calculatedText += theText
+        }
     
 }
 

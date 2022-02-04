@@ -11,9 +11,8 @@ class PlotClass: ObservableObject {
     
     @Published var plotArray: [PlotDataClass]
     
-    init() {
+    @MainActor init() {
         self.plotArray = [PlotDataClass.init(fromLine: true)]
-        self.plotArray.append(contentsOf: [PlotDataClass.init(fromLine: true)])
         self.plotArray.append(contentsOf: [PlotDataClass.init(fromLine: true)])
             
         }

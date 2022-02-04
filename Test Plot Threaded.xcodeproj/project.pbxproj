@@ -74,9 +74,9 @@
 		D2384D6925BFC5D20082D98A /* Test_PlotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_PlotApp.swift; sourceTree = "<group>"; };
 		D2384D6A25BFC5D20082D98A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D2384D6B25BFC5D30082D98A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D2384D7025BFC5D30082D98A /* Test Plot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Plot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2384D7025BFC5D30082D98A /* Test Plot Threaded.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Plot Threaded.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2384D7325BFC5D30082D98A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2384D7825BFC5D30082D98A /* Test Plot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Plot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2384D7825BFC5D30082D98A /* Test Plot Threaded.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Plot Threaded.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2384D7A25BFC5D30082D98A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2384D7B25BFC5D30082D98A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		D2384D8025BFC5D30082D98A /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,8 +165,8 @@
 		D2384D7125BFC5D30082D98A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2384D7025BFC5D30082D98A /* Test Plot.app */,
-				D2384D7825BFC5D30082D98A /* Test Plot.app */,
+				D2384D7025BFC5D30082D98A /* Test Plot Threaded.app */,
+				D2384D7825BFC5D30082D98A /* Test Plot Threaded.app */,
 				D2384D8025BFC5D30082D98A /* Tests iOS.xctest */,
 				D2384D8B25BFC5D30082D98A /* Tests macOS.xctest */,
 			);
@@ -218,9 +218,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D2384D6F25BFC5D30082D98A /* Test Plot (iOS) */ = {
+		D2384D6F25BFC5D30082D98A /* Test Plot Threaded (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2384D9A25BFC5D30082D98A /* Build configuration list for PBXNativeTarget "Test Plot (iOS)" */;
+			buildConfigurationList = D2384D9A25BFC5D30082D98A /* Build configuration list for PBXNativeTarget "Test Plot Threaded (iOS)" */;
 			buildPhases = (
 				D2384D6C25BFC5D30082D98A /* Sources */,
 				D2384D6D25BFC5D30082D98A /* Frameworks */,
@@ -230,17 +230,17 @@
 			);
 			dependencies = (
 			);
-			name = "Test Plot (iOS)";
+			name = "Test Plot Threaded (iOS)";
 			packageProductDependencies = (
 				D2384DF425BFC6E20082D98A /* CorePlot */,
 			);
 			productName = "Test Plot (iOS)";
-			productReference = D2384D7025BFC5D30082D98A /* Test Plot.app */;
+			productReference = D2384D7025BFC5D30082D98A /* Test Plot Threaded.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D2384D7725BFC5D30082D98A /* Test Plot (macOS) */ = {
+		D2384D7725BFC5D30082D98A /* Test Plot Threaded (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2384D9D25BFC5D30082D98A /* Build configuration list for PBXNativeTarget "Test Plot (macOS)" */;
+			buildConfigurationList = D2384D9D25BFC5D30082D98A /* Build configuration list for PBXNativeTarget "Test Plot Threaded (macOS)" */;
 			buildPhases = (
 				D2384D7425BFC5D30082D98A /* Sources */,
 				D2384D7525BFC5D30082D98A /* Frameworks */,
@@ -250,12 +250,12 @@
 			);
 			dependencies = (
 			);
-			name = "Test Plot (macOS)";
+			name = "Test Plot Threaded (macOS)";
 			packageProductDependencies = (
 				D2384DED25BFC6CB0082D98A /* CorePlot */,
 			);
 			productName = "Test Plot (macOS)";
-			productReference = D2384D7825BFC5D30082D98A /* Test Plot.app */;
+			productReference = D2384D7825BFC5D30082D98A /* Test Plot Threaded.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D2384D7F25BFC5D30082D98A /* Tests iOS */ = {
@@ -325,7 +325,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D2384D6725BFC5D20082D98A /* Build configuration list for PBXProject "Test Plot" */;
+			buildConfigurationList = D2384D6725BFC5D20082D98A /* Build configuration list for PBXProject "Test Plot Threaded" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -341,8 +341,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2384D6F25BFC5D30082D98A /* Test Plot (iOS) */,
-				D2384D7725BFC5D30082D98A /* Test Plot (macOS) */,
+				D2384D6F25BFC5D30082D98A /* Test Plot Threaded (iOS) */,
+				D2384D7725BFC5D30082D98A /* Test Plot Threaded (macOS) */,
 				D2384D7F25BFC5D30082D98A /* Tests iOS */,
 				D2384D8A25BFC5D30082D98A /* Tests macOS */,
 			);
@@ -454,12 +454,12 @@
 /* Begin PBXTargetDependency section */
 		D2384D8225BFC5D30082D98A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D2384D6F25BFC5D30082D98A /* Test Plot (iOS) */;
+			target = D2384D6F25BFC5D30082D98A /* Test Plot Threaded (iOS) */;
 			targetProxy = D2384D8125BFC5D30082D98A /* PBXContainerItemProxy */;
 		};
 		D2384D8D25BFC5D30082D98A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D2384D7725BFC5D30082D98A /* Test Plot (macOS) */;
+			target = D2384D7725BFC5D30082D98A /* Test Plot Threaded (macOS) */;
 			targetProxy = D2384D8C25BFC5D30082D98A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -585,13 +585,13 @@
 				DEVELOPMENT_TEAM = V59RVGUYZD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jiIIT.Test-Plot";
-				PRODUCT_NAME = "Test Plot";
+				PRODUCT_NAME = "Test Plot Threaded";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -607,13 +607,13 @@
 				DEVELOPMENT_TEAM = V59RVGUYZD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jiIIT.Test-Plot";
-				PRODUCT_NAME = "Test Plot";
+				PRODUCT_NAME = "Test Plot Threaded";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -637,9 +637,9 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jiIIT.Test-Plot";
-				PRODUCT_NAME = "Test Plot";
+				PRODUCT_NAME = "Test Plot Threaded";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -661,9 +661,9 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jiIIT.Test-Plot";
-				PRODUCT_NAME = "Test Plot";
+				PRODUCT_NAME = "Test Plot Threaded";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -761,7 +761,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D2384D6725BFC5D20082D98A /* Build configuration list for PBXProject "Test Plot" */ = {
+		D2384D6725BFC5D20082D98A /* Build configuration list for PBXProject "Test Plot Threaded" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2384D9825BFC5D30082D98A /* Debug */,
@@ -770,7 +770,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2384D9A25BFC5D30082D98A /* Build configuration list for PBXNativeTarget "Test Plot (iOS)" */ = {
+		D2384D9A25BFC5D30082D98A /* Build configuration list for PBXNativeTarget "Test Plot Threaded (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2384D9B25BFC5D30082D98A /* Debug */,
@@ -779,7 +779,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2384D9D25BFC5D30082D98A /* Build configuration list for PBXNativeTarget "Test Plot (macOS)" */ = {
+		D2384D9D25BFC5D30082D98A /* Build configuration list for PBXNativeTarget "Test Plot Threaded (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2384D9E25BFC5D30082D98A /* Debug */,

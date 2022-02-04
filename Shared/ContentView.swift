@@ -31,6 +31,16 @@ struct ContentView: View {
                 .padding()
             
             Divider()
+            /*
+                     CorePlot(dataForPlot: $plotData.plotArray[0].plotData, changingPlotParameters: $plotData.plotArray[0].changingPlotParameters)
+                         .setPlotPadding(left: 10)
+                         .setPlotPadding(right: 10)
+                         .setPlotPadding(top: 10)
+                         .setPlotPadding(bottom: 10)
+                         .padding()
+                     
+                     Divider()
+                     */
    /*
             CorePlot(dataForPlot: $plotData.plotArray[1].plotData, changingPlotParameters: $plotData.plotArray[1].changingPlotParameters)
                 .setPlotPadding(left: 10)
@@ -63,11 +73,12 @@ struct ContentView: View {
             HStack{
                 Button("exp(-x)", action: {
                     
-                    self.selector = 0
-                    self.calculate()
+                    Task.init{
                     
-                    // This forces a SwiftUI update. Force a SwiftUI update.
-                    self.plotData.objectWillChange.send()
+                    self.selector = 0
+                    await self.calculate()
+                    }
+                    
                     
                     
                 }
@@ -79,17 +90,14 @@ struct ContentView: View {
             }
             
             HStack{
-                Button("x", action: {
-                    
-                    // This forces SwiftUI to update
-                    self.plotData.objectWillChange.send()
+                Button("x", action: { Task.init{
                     
                     self.selector = 1
                     
-                    self.calculate2()
+                    await self.calculate2()
                     
                     
-                    
+                }
                 }
                 
                 
@@ -102,37 +110,89 @@ struct ContentView: View {
         
     }
     
-    
+    @MainActor func setupPlotDataModel(selector: Int){
+        
+        calculator.plotDataModel = self.plotData.plotArray[selector]
+    }
     
     
     /// calculate
     /// Function accepts the command to start the calculation from the GUI
-    func calculate(){
+    func calculate() async {
+        
+        //pass the plotDataModel to the Calculator
+       // calculator.plotDataModel = self.plotData.plotArray[0]
+        
+        setupPlotDataModel(selector: 0)
+        
+     //   Task{
+            
+            
+            let _ = await withTaskGroup(of:  Void.self) { taskGroup in
+
+
+
+                taskGroup.addTask {
+
         
         var temp = 0.0
         
-        //pass the plotDataModel to the Calculator
-        calculator.plotDataModel = self.plotData.plotArray[0]
+        
         
         //Calculate the new plotting data and place in the plotDataModel
-        calculator.ploteToTheMinusX()
+        await calculator.ploteToTheMinusX()
+        
+                    // This forces a SwiftUI update. Force a SwiftUI update.
+        await self.plotData.objectWillChange.send()
+                    
+                }
+
+                
+            }
+            
+  //      }
         
         
     }
     
     /// calculate
     /// Function accepts the command to start the calculation from the GUI
-    func calculate2(){
+    func calculate2() async {
+        
+        
+        //pass the plotDataModel to the Calculator
+       // calculator.plotDataModel = self.plotData.plotArray[0]
+        
+        setupPlotDataModel(selector: 1)
+        
+     //   Task{
+            
+            
+            let _ = await withTaskGroup(of:  Void.self) { taskGroup in
+
+
+
+                taskGroup.addTask {
+
         
         var temp = 0.0
         
-        //pass the plotDataModel to the Calculator
-        calculator.plotDataModel = self.plotData.plotArray[1]
+        
         
         //Calculate the new plotting data and place in the plotDataModel
-        calculator.plotYEqualsX()
+        await calculator.plotYEqualsX()
+                  
+                    // This forces a SwiftUI update. Force a SwiftUI update.
+        await self.plotData.objectWillChange.send()
+                    
+                }
+                
+            }
+            
+    //    }
         
         
+
     }
     
 
